@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springmvc
+    username: root
+    password: Wjjhhh111
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+
+  mvc:
+    static-path-pattern: /static/**
+
+# Spring boot 视图配置
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/
+#      suffix: .jsp
+mybatis:
+  type-aliases-package: com.hzdl.bootdemo02.bean
+  mapper-locations: classpath:mapper/*Mapper.xml
